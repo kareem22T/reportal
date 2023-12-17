@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif !important;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.hr {
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr hr {
+    width: 90%;
+    height: 1px;
+    background-color: #e5eaef;
+    border: none;
+}
+:root {
+    --main-color: #FE7F2D;
+    --second-color: #233D4D;
+    --third-color: #FCCA46;
+}
+.card {
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+.progress {
+    background-color: var(--second-color);
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0 5px;
+    height: 30px;
+    width: 300px;
+}
+
+.progress-done {
+    background: linear-gradient(to left, #FCCA46, #FE7F2D);
+    box-shadow: 0 3px 3px -5px #FCCA46, 0 2px 5px #FCCA46;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+    transform: scale(1.05);
+}
+.scrollbar::-webkit-scrollbar {
+    width: 16px;
+    cursor: pointer
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border: 3px solid transparent
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(59, 69, 78, .1);
+    border-radius: 100vh;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    box-shadow: inset 0 0 15px 15px transparent;
+    -webkit-transition: box-shadow .5s;
+    transition: box-shadow .5s
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 15px 15px rgba(59, 69, 78, .4)
+}
+
+.scrollbar:hover::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 15px 15px rgba(59, 69, 78, .2)
+}
+#main_wrapper {
+    position: relative;
+}
+
+#main_wrapper .body_wrapper.margin_right {
+    margin-right: 270px;
+    transition: all .9s ease-in-out;
+}
+
+@media (max-width: 1300px) {
+    #main_wrapper .body_wrapper.margin_right {
+        margin-right: 0;
+        transition: all .9s ease-in-out;
+    }
+    .hide-content {
+        background: #00000070;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+    }
+}
+
+#main_wrapper .body_wrapper .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    margin-top: 2rem;
+}
+
+#main_wrapper .body_wrapper header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    border-radius: 0 0 1rem 1rem;
+}
+
+#main_wrapper .body_wrapper header a:not(.logo) {
+    color: #253f4e;
+    transition: all .2s ease-in;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    border: 1px solid rgba(229, 234, 239, 0);
+}
+
+#main_wrapper .body_wrapper header a:not(.logo):hover {
+    color: #253f4e;
+    transition: all .2s ease-in;
+    background: #f9f9f9;
+    border: 1px solid rgb(229, 234, 239);
+}
+
+#main_wrapper .body_wrapper header a svg {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+#main_wrapper .body_wrapper header img {
+    width: 80px;
+}
+@media (max-width: 700px) {
+    #main_wrapper .body_wrapper header a svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    #main_wrapper .body_wrapper header img {
+        width: 50px;
+    }
+}
+#main_wrapper aside {
+    position: fixed !important;
+    top: 0;
+    width: 270px;
+    background-color: #fff;
+    position: absolute;
+    -webkit-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    height: 100vh;
+    z-index: 11;
+    border-left: 2px solid rgb(229, 234, 239);
+}
+@media (max-width: 1300px) {
+    #main_wrapper aside {
+        display: none;
+    }
+}
+#main_wrapper aside >div {
+    padding: 0px 24px;
+}
+.nav-small-cap {
+    margin-top: 24px;
+    color: var(--second-color);
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding: 3px 12px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.sidebar-link {
+    color: var(--second-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 17px;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 30px;
+    position: relative;
+    margin: 0px 0px 2px;
+    padding: 10px;
+    border-radius: 7px;
+    gap: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-decoration: none;
+}
+.sidebar-link:hover, .sidebar-link.selected {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.persentage {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.persentage >div {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    line-height: 22px;
+}
+
+.persentage >div .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.persentage >div p {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;
+    line-height: 35px;
+}
+.persentage h1, .persentage h2, .persentage h3, .persentage h4 {
+    line-height: normal;
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    .persentage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .persentage >div:nth-child(2) {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    .persentage >div:nth-child(2) br{
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .persentage {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .persentage >div:nth-child(2) {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+    .persentage >div:nth-child(2) br{
+        display: none;
+    }
+    .persentage >div:nth-child(2) h3{
+        white-space: normal !important;
+    }
+    .progress {
+        width: 280px !important;
+    }
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.invoice_statistics h1 {
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    line-height: 45px;
+}
+
+.invoice_statistics .cards_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.invoice_statistics .cards_wrapper .card  {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    line-height: 40px;
+}
+
+.invoice_statistics .cards_wrapper .card p {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 35px;
+    color: var(--main-color);
+}
+
+.invoice_statistics .cards_wrapper .card span {
+    color: var(--second-color);
+}
+
+.invoice_statistics .cards_wrapper .card svg {
+    width: 60px;
+    height: 60px;
+    color: var(--second-color) !important;
+}
+@media (max-width: 700px) {
+    .invoice_statistics .cards_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+footer {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    background: var(--second-color);
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer p span {
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer div a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 1rem;
+}
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+}

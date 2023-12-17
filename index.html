@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome icons -->
+    <link rel="stylesheet" href="./assets/libs/fontawsome.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="shortcut icon" href="./assets/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Reportal</title>
+</head>
+<body dir="rtl">
+    <div id="main_wrapper">
+        <aside class="animate__animated">
+            <div>
+                <ul id="sidebarnav" class="in">
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">لوحة التحكم</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link selected" href="./index.html" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-analytics" width="26" height="26"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                                <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                <path d="M9 17v-5" />
+                                <path d="M12 17v-1" />
+                                <path d="M15 17v-3" />
+                            </svg>
+                            <span class="hide-menu">الرئيسية</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="hide-content"></div>
+        <div class="body_wrapper margin_right">
+            <header>
+                <a href=""  class="toggle_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6h16" />
+                    <path d="M7 12h13" />
+                    <path d="M10 18h10" />
+                    </svg>
+                </a>
+                <a href="" class="logo">
+                    <img src="./assets/imgs/logo.png" alt="">
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-filled" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="currentColor" />
+                        <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" stroke-width="0"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+            </header>
+            <div class="container">
+                <section class="persentage">
+                    <div>
+                        <div class="card">
+                            12/9/2023
+                        </div>
+                        <div class="card">
+                            <p>الفواتير 30%</p>
+                            <div class="progress">
+                                <div class="progress-done" data-done="30">
+                                    30%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                            الفواتير من - إلى<br>
+                            نسبة تحميل<br>
+                            الفواتير والايصالات
+                        </h3>
+                    </div>
+                    <div>
+                        <div class="card">
+                            12/9/2023
+                        </div>
+                        <div class="card">
+                            <p>الايصالات 100%</p>
+                            <div class="progress">
+                                <div class="progress-done" data-done="100">
+                                    100%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="hr">
+                    <hr>
+                </div>
+                <section class="invoice_statistics">
+                    <h1>احصائيات عن الفواتير</h1>
+                    <div class="cards_wrapper">
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Invoice</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Creidt</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Debit</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                <div class="hr">
+                    <hr>
+                </div>
+                <section class="invoice_statistics">
+                    <h1>احصائيات عن الفواتير المستلمة</h1>
+                    <div class="cards_wrapper">
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Invoice</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Creidt</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <p>عدد فواتير Debit</p>
+                                <span>
+                                    تم تحميل 0/0
+                                </span>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>كل الحقوق محفوظة لشركة <span>Reportal</span></p>
+                <div>
+                    <a href="">سياسة الخصوصية</a>
+                    <a href="">الشروط والأحكام</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./assets/libs/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.progress-done').each(function () {
+                $(this).css({
+                    "width": $(this).attr('data-done') + "%",
+                    "opacity": '1'
+                })
+            })
+            $(".toggle_menu, .hide-content").on("click", function (e) {
+                e.preventDefault()
+                if ($("aside").is(":visible")) {
+                    $("aside, .hide-content").addClass("animate__slideOutRight").fadeOut()
+                    $("aside, .hide-content").removeClass("animate__slideInRight")
+                    $(".body_wrapper").removeClass("margin_right")
+                }
+                else {
+                    $("aside, .hide-content").addClass("animate__slideInRight").fadeIn()
+                    $("aside, .hide-content").removeClass("animate__slideOutRight")
+                    $(".body_wrapper").addClass("margin_right")
+                }
+            })
+        });
+    </script>
+</body>
+</html>
